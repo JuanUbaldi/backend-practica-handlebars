@@ -1,0 +1,13 @@
+<h2 class="h2Titulo">hola soy {{usuario.name}} y soy administrador</h2>
+{{#if usuario.isAdmin}}
+  {{#each usuarios}}
+    <div>
+      <h3>Hola me llamo {{this.name}}</h3>
+      <h4>Tengo {{this.edad}} años de edad</h4>
+      <h4>y soy de la ciudad de
+        {{this.edad}}, provincia de bs. as., Argentina</h4>
+    </div>
+  {{/each}}
+{{else}}
+  <h3>no es administrador</h3>
+{{/if}}
